@@ -83,3 +83,17 @@ Liquid templating languageというもののおかげで、自動的にpageフ�
 ここまで来たらあとは記事を書くだけだ。
 
 _posts下に2015-10-10-rebirth-this-page.md(このページ)をつくる。jekyllのおかげで、markdownでさらさら書けばナビゲーションバーやフッターと統合してくれる。うれしい。
+
+##アップロードする
+
+ここから先は未来の話だ。
+
+github pagesはjekyllによって生成されたhtmlファイルではなく、個々のリソースをpushすることでgithubのサーバー側でビルドして表示してくれる。
+
+ということで、
+
+	$git add -A
+	$git commit -m 'publish new site'
+	$git push -u origin master
+
+うまくいってたら表示される。
