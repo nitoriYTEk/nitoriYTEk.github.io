@@ -1,0 +1,26 @@
+---
+layout:	unitypost
+title:	"UnityのWebGL書き出しを動かしてみるテスト"
+categories:	game unity webgl
+---
+
+#test
+
+<div class="template-wrap clear">
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="450px" width="800px"></canvas>
+  <br>
+  <div class="logo"></div>
+  <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+  <div class="title">herb2</div>
+</div>
+<script type='text/javascript'>
+var Module = {
+TOTAL_MEMORY: 268435456,
+errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+compatibilitycheck: null,
+dataUrl: "Release/WebGL.data",
+codeUrl: "Release/WebGL.js",
+memUrl: "Release/WebGL.mem",
+};
+</script>
+<script src="Release/UnityLoader.js"></script>
